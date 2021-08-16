@@ -53,7 +53,7 @@ export default function Sticky_menu(props) {
                 <div className="content">
                     <a href="#home">
                         <svg
-                            onClick={() => { showSticky_menu(); history.push('/Portofolio'); } }
+                            onClick={() => { showSticky_menu(); history.push('/RSM-developer'); } }
                             xmlns="http://www.w3.org/2000/svg"
                             width="24"
                             height="24"

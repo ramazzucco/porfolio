@@ -197,44 +197,39 @@ const spanish = {
                 gallery: [
                     {
                         id: 1,
-                        url: `${urlbase_meatme}inicio.png`,
-                        name: 'inicio'
+                        url: `${urlbase_meatme}Admin.png`,
+                        name: 'Admin'
                     },
                     {
                         id: 2,
-                        url: `${urlbase_meatme}productos.png`,
-                        name: 'productos'
+                        url: `${urlbase_meatme}Carrito.png`,
+                        name: 'Carrito'
                     },
                     {
                         id: 3,
-                        url: `${urlbase_meatme}register.png`,
-                        name: 'register'
+                        url: `${urlbase_meatme}Categoria_vacuno.png`,
+                        name: 'Categoria_vacuno'
                     },
                     {
                         id: 4,
-                        url: `${urlbase_meatme}login.png`,
-                        name: 'login'
+                        url: `${urlbase_meatme}Inicio.png`,
+                        name: 'Inicio'
                     },
                     {
                         id: 5,
-                        url: `${urlbase_meatme}profile_usuario.png`,
-                        name: 'profile usuario'
+                        url: `${urlbase_meatme}Login.png`,
+                        name: 'Login'
                     },
                     {
                         id: 6,
-                        url: `${urlbase_meatme}carrito.png`,
-                        name: 'carrito'
+                        url: `${urlbase_meatme}Perfil_de_usuario.png`,
+                        name: 'Perfil_de_usuario'
                     },
                     {
                         id: 7,
-                        url: `${urlbase_meatme}admin.png`,
-                        name: 'admin'
-                    },
-                    {
-                        id: 8,
-                        url: `${urlbase_meatme}editar-crear.png`,
-                        name: 'editar-crear'
-                    },
+                        url: `${urlbase_meatme}Registro.png`,
+                        name: 'Registro'
+                    }
                 ],
             },
             otherprojects: {
@@ -700,44 +695,39 @@ const english = {
                 gallery: [
                     {
                         id: 1,
-                        url: `${urlbase_meatme}inicio.png`,
-                        name: 'home'
+                        url: `${urlbase_meatme}Admin.png`,
+                        name: 'Admin'
                     },
                     {
                         id: 2,
-                        url: `${urlbase_meatme}productos.png`,
-                        name: 'products'
+                        url: `${urlbase_meatme}Carrito.png`,
+                        name: 'Cart'
                     },
                     {
                         id: 3,
-                        url: `${urlbase_meatme}register.png`,
-                        name: 'register'
+                        url: `${urlbase_meatme}Categoria_vacuno.png`,
+                        name: 'Category'
                     },
                     {
                         id: 4,
-                        url: `${urlbase_meatme}login.png`,
-                        name: 'login'
+                        url: `${urlbase_meatme}Inicio.png`,
+                        name: 'Init'
                     },
                     {
                         id: 5,
-                        url: `${urlbase_meatme}profile_usuario.png`,
-                        name: 'profile user'
+                        url: `${urlbase_meatme}Login.png`,
+                        name: 'Login'
                     },
                     {
                         id: 6,
-                        url: `${urlbase_meatme}carrito.png`,
-                        name: 'cart'
+                        url: `${urlbase_meatme}Perfil_de_usuario.png`,
+                        name: 'User_profile'
                     },
                     {
                         id: 7,
-                        url: `${urlbase_meatme}admin.png`,
-                        name: 'admin'
-                    },
-                    {
-                        id: 8,
-                        url: `${urlbase_meatme}editar-crear.png`,
-                        name: 'edit-create'
-                    },
+                        url: `${urlbase_meatme}Registro.png`,
+                        name: 'Register'
+                    }
                 ],
             },
             otherprojects: {
