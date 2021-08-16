@@ -22,9 +22,9 @@ import info_clock from '../assets/images/futbol5/app/info_clock.png';
 
 
 // URLbase
-const urlbase_meatme = "https://ramazzucco.github.io/Portofolio/images/meatme/";
-const urlbase_futbol5_web = "https://ramazzucco.github.io/Portofolio/images/futbol5/sitioweb/";
-const urkbase_futbol5_app = "https://ramazzucco.github.io/Portofolio/images/futbol5/aplicacion/";
+const urlbase_meatme = "https://ramazzucco.github.io/RSM-developer/images/meatme/";
+const urlbase_futbol5_web = "https://ramazzucco.github.io/RSM-developer/images/futbol5/sitioweb/";
+const urkbase_futbol5_app = "https://ramazzucco.github.io/RSM-developer/images/futbol5/aplicacion/";
 
 const spanish = {
     header: {
@@ -78,21 +78,21 @@ const spanish = {
                 icon: icons.page,
                 title: 'Meat Me',
                 text: 'Sitio web desarrollado con Node.js y Express.',
-                link: '/Portofolio/portfolio/meatme',
+                link: '/RSM-developer/portfolio/meatme',
                 titlelink: 'Click para leer mas'
             },
             {
                 icon: icons.page,
                 title: 'Futbol 5',
                 text: 'Pagina web desarrollada en React.',
-                link: '/Portofolio/portfolio/webfutbol5',
+                link: '/RSM-developer/portfolio/webfutbol5',
                 titlelink: 'Click para leer mas'
             },
             {
                 icon: icons.app,
                 title: 'Futbol 5',
                 text: 'Aplicacion web desarrollada en React.',
-                link: '/Portofolio/portfolio/appfutbol5',
+                link: '/RSM-developer/portfolio/appfutbol5',
                 titlelink: 'Click para leer mas'
             }
         ],
@@ -190,7 +190,7 @@ const spanish = {
                 ],
                 link: {
                     title: 'Ver codigo',
-                    url: 'https://github.com/0220CBFSNCN01ARRO/grupo_5_carniceria',
+                    url: 'https://github.com/ramazzucco/Meat-me',
                     icon: icons.github,
                     page: 'https://meat--me.herokuapp.com/'
                 },
@@ -252,7 +252,7 @@ const spanish = {
                                 'Sitio web'
                             ],
                             button: {
-                                path: '/Portofolio/portfolio/webfutbol5',
+                                path: '/RSM-developer/portfolio/webfutbol5',
                                 title: 'Ir al proyecto'
                             }
                         }
@@ -269,7 +269,7 @@ const spanish = {
                                 'Aplicacion web'
                             ],
                             button: {
-                                path: '/Portofolio/portfolio/appfutbol5',
+                                path: '/RSM-developer/portfolio/appfutbol5',
                                 title: 'Ir al proyecto'
                             }
                         }
@@ -340,7 +340,7 @@ const spanish = {
                                 'Sitio web'
                             ],
                             button: {
-                                path: '/Portofolio/portfolio/meatme',
+                                path: '/RSM-developer/portfolio/meatme',
                                 title: 'Ir al proyecto'
                             }
                         }
@@ -357,7 +357,7 @@ const spanish = {
                                 'Aplicacion web'
                             ],
                             button: {
-                                path: '/Portofolio/portfolio/appfutbol5',
+                                path: '/RSM-developer/portfolio/appfutbol5',
                                 title: 'Ir al proyecto'
                             }
                         }
@@ -502,7 +502,7 @@ const spanish = {
                                 'Sitio web'
                             ],
                             button: {
-                                path: '/Portofolio/portfolio/meatme',
+                                path: '/RSM-developer/portfolio/meatme',
                                 title: 'Ir al proyecto'
                             }
                         }
@@ -519,7 +519,7 @@ const spanish = {
                                 'Sitio web'
                             ],
                             button: {
-                                path: '/Portofolio/portfolio/webfutbol5',
+                                path: '/RSM-developer/portfolio/webfutbol5',
                                 title: 'Ir al proyecto'
                             }
                         }
@@ -582,21 +582,21 @@ const english = {
                 icon: icons.page,
                 title: 'Meat Me',
                 text: 'Website developed with Node.js and Express.',
-                link: '/Portofolio/portfolio/meatme',
+                link: '/RSM-developer/portfolio/meatme',
                 titlelink: 'Click to read more'
             },
             {
                 icon: icons.page,
                 title: 'Futbol 5',
                 text: 'Website developed in React.',
-                link: '/Portofolio/portfolio/webfutbol5',
+                link: '/RSM-developer/portfolio/webfutbol5',
                 titlelink: 'Click to read more'
             },
             {
                 icon: icons.app,
                 title: 'Futbol 5',
                 text: 'Aplication web developed in React.',
-                link: '/Portofolio/portfolio/appfutbol5',
+                link: '/RSM-developer/portfolio/appfutbol5',
                 titlelink: 'Click to read more'
             }
         ],
@@ -694,7 +694,7 @@ const english = {
                 ],
                 link: {
                     title: 'See code',
-                    url: 'https://github.com/0220CBFSNCN01ARRO/grupo_5_carniceria',
+                    url: 'https://github.com/ramazzucco/Meat-me',
                     icon: icons.github
                 },
                 gallery: [
@@ -755,7 +755,7 @@ const english = {
                                 'Web site'
                             ],
                             button: {
-                                path: '/Portofolio/portfolio/webfutbol5',
+                                path: '/RSM-developer/portfolio/webfutbol5',
                                 title: 'Go to project'
                             }
                         }
@@ -772,7 +772,7 @@ const english = {
                                 'Web aplication'
                             ],
                             button: {
-                                path: '/Portofolio/portfolio/appfutbol5',
+                                path: '/RSM-developer/portfolio/appfutbol5',
                                 title: 'Go to project'
                             }
                         }
@@ -843,7 +843,7 @@ const english = {
                                 'Website'
                             ],
                             button: {
-                                path: '/Portofolio/portfolio/meatme',
+                                path: '/RSM-developer/portfolio/meatme',
                                 title: 'Go to project'
                             }
                         }
@@ -860,7 +860,7 @@ const english = {
                                 'Aplication web'
                             ],
                             button: {
-                                path: '/Portofolio/portfolio/appfutbol5',
+                                path: '/RSM-developer/portfolio/appfutbol5',
                                 title: 'Go to project'
                             }
                         }
@@ -1005,7 +1005,7 @@ const english = {
                                 'Website'
                             ],
                             button: {
-                                path: '/Portofolio/portfolio/meatme',
+                                path: '/RSM-developer/portfolio/meatme',
                                 title: 'Go to project'
                             }
                         }
@@ -1022,7 +1022,7 @@ const english = {
                                 'Website'
                             ],
                             button: {
-                                path: '/Portofolio/portfolio/webfutbol5',
+                                path: '/RSM-developer/portfolio/webfutbol5',
                                 title: 'Go to project'
                             }
                         }

@@ -58,12 +58,6 @@ export default function Home(props) {
                             <text x="10" y="60" fill="currentColor" fontSize='2rem' opacity='0' className='text1'>RSM</text>
                             <text x="85" y="72" fill="silver" fontSize='.7rem' opacity='0' className='text2'>Developer</text>
                         </svg>
-                        {/* <svg width="150" height="100">
-                            <circle cx="50" cy="50" r="40" fill="currentColor" />
-                            <circle cx="53" cy="50" r="37" fill="#000" />
-                            <text x="70" y="60" fill="currentColor" fontSize='2rem'>RSM</text>
-                            <text x="85" y="72" fill="silver" fontSize='.7rem'>Developer</text>
-                        </svg> */}
                     </div>
                     <div className="name">
                         <h1>Ramiro S. Mazzucco</h1>

@@ -32,21 +32,21 @@ function App() {
         <div className="App">
             <Router>
                 <Switch>
-                    <Route exact path="/Portofolio">
+                    <Route exact path="/RSM-developer">
                         {
                             data.header
                                 ? <Index lenguage={lenguage} setLenguage={setLenguage} data={{header: data.header, section: data.section}} />
                                 : <Loading />
                         }
                     </Route>
-                    <Route exact path="/Portofolio/moreaboutme">
+                    <Route exact path="/RSM-developer/moreaboutme">
                         {
                             data.header
                                 ? <Moreaboutme data={data.moreaboutme} />
                                 : <Loading />
                         }
                     </Route>
-                    <Route exact path="/Portofolio/portfolio/:project">
+                    <Route exact path="/RSM-developer/portfolio/:project">
                         {
                             data.header
                                 ? <Portfolio data={data.portfolio} />

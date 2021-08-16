@@ -21,7 +21,7 @@ export default function Aboutme(props) {
                 </div>
                 <p>{ text }</p>
                 <cite>{ cite }</cite>
-                <button className="button-more" onClick={() => history.push('/Portofolio/moreaboutme')}>
+                <button className="button-more" onClick={() => history.push('/RSM-developer/moreaboutme')}>
                     <span>{ button }</span>
                     <span>{ button }</span>
                 </button>
