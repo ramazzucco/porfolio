@@ -1,0 +1,143 @@
+@use '../../sass/base';
+@use '../../sass/mixins';
+
+.container-stycky_menu {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    z-index: 5;
+
+    .menu {
+        position: fixed;
+        right: .5rem;
+        bottom: .5rem;
+
+        .icon-menu {
+            border-radius: 50%;
+            z-index: 120;
+            padding: 1.5rem;
+            cursor: pointer;
+            border: none;
+            box-shadow: 3px 3px 5px 1px rgba(0,0,0,0.44);
+
+            &:hover {
+                position: relative;
+                top: -1px;
+                box-shadow: 3px 3px 8px 3px rgba(0,0,0,0.44),
+                15px 15px 50px 8px rgba(0,0,0,0.3);
+                transition: all .3s ease;
+            }
+
+            &:active {
+                box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.44);
+            }
+
+            .bi-grid-fill {
+                @include mixins.flex-center;
+                position: relative;
+                color: rgba(0, 0, 0, .3);
+                transform: rotate(-360deg);
+                transition: all .3s linear;
+            }
+
+            .bi-grid-fill.spin {
+                -webkit-animation: spin .5s ease-in;
+                -moz-animation: spin .5s ease-in;
+                animation: spin .5s ease-in;
+                -webkit-animation-fill-mode: forwards;
+                -moz-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+            }
+
+            .bi-grid-fill.backwards {
+                -webkit-animation: spin-backwards .5s ease-in;
+                -moz-animation: spin-backwards .5s ease-in;
+                animation: spin-backwards .5s ease-in;
+                -webkit-animation-fill-mode: forwards;
+                -moz-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+            }
+        }
+
+        .content {
+            @include mixins.flex-column-center;
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            height: 0;
+            transform: translate(-50%, -100%);
+            padding-bottom: 0;
+            background: rgba(0, 0, 0, .3);
+            border-radius: 50px 50px 0 0;
+            z-index: -5;
+            overflow: hidden;
+            transition: all .7s ease;
+
+            .bi {
+                cursor: pointer;
+                margin-bottom: 1rem;
+
+                &.bi-house-door-fill {
+                    margin-bottom: 2rem;
+                    // color: inherit;
+
+                    // &:hover {
+                    //     color: rgba($color: #92225a, $alpha: .7);
+                    // }
+                }
+
+                // &.bi-linkedin,
+                // &.bi-github,
+                // &.bi-envelope-fill,
+                // &.bi-file-earmark-pdf-fill {
+                //     color: rgba($color: #bc06fd, $alpha: .7);
+
+                //     &:hover {
+                //         color: rgba($color: #9002c4, $alpha: .7);
+                //     }
+                // }
+            }
+
+        }
+
+        .content.show {
+            height: 17rem;
+            padding: 1rem;
+        }
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: scale(.8) rotate(0deg);
+    }
+    25% {
+        transform: scale(1) rotate(90deg);
+    }
+    50% {
+        transform: scale(1.1) rotate(180deg);
+    }
+    75% {
+        transform: scale(1.2) rotate(270deg);
+    }
+    100% {
+        transform: scale(1.3) rotate(360deg);
+    }
+}
+@keyframes spin-backwards {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    25% {
+        transform: scale(1.1) rotate(-90deg);
+    }
+    50% {
+        transform: scale(1.2) rotate(-180deg);
+    }
+    75% {
+        transform: scale(1.1) rotate(-270deg);
+    }
+    100% {
+        transform: scale(1) rotate(-360deg);
+    }
+}

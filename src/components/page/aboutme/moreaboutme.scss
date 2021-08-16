@@ -1,0 +1,159 @@
+@use '../../../sass/base';
+@use '../../../sass/mixins';
+
+.moreaboutme {
+    width: 100%;
+    height: 100%;
+    color: base.$primary-color;
+
+    .certificate {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 2rem;
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            width: 50%;
+            padding: 3rem;
+            line-height: 1.5rem;
+
+            a {
+                color: base.$tertiary-color;
+
+                &:hover {
+                    color: base.$quaternary-color;
+                    border-bottom: 1px solid base.$quaternary-color;
+                }
+            }
+        }
+
+        .diploma {
+            @include mixins.flex-center;
+            width: 50%;
+
+            img {
+                box-shadow:  1px 1px 5px 1px rgba(0, 0, 0, 0.3),
+                1px 1px 20px 1px rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        @media(max-width: 768px){
+            .text,
+            .diploma {
+                width: 100%;
+            }
+
+            .text {
+                padding: 0.5rem;
+            }
+        }
+    }
+
+    .studies {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        background: #CCC;
+        color: #FFF;
+
+        h4 {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .fullstack {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+            width: 100%;
+            padding: 2rem;
+
+            .backend,
+            .frontend,
+            .database,
+            .othertools {
+                @include mixins.flex-center;
+                border: 1px solid rgb(220, 220, 220);
+                width: 33%;
+                padding: 1rem;
+                margin-bottom: 1rem;
+
+                h5 {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 1.2rem;
+                    margin-top: 1.3rem;
+                    filter: drop-shadow(1px 1px 5px rgba(0,0,0,.3));
+                }
+
+                ul {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+
+                    li {
+                        filter: drop-shadow(1px 1px 5px rgba(0,0,0,.3));
+                    }
+                }
+
+                @media(max-width: 990px){
+                    width: 45%;
+                }
+
+                @media(max-width: 768px){
+                    width: 100%;
+                }
+            }
+
+            svg#github {
+                width: 64px;
+            }
+
+            svg#sequelize {
+                path {
+                    &.cls-1 {
+                        fill: #2f406a;
+                    }
+                    &.cls-2 {
+                        fill: #2379bd;
+                    }
+                    &.cls-3 {
+                        fill: #03afef;
+                    }
+                }
+            }
+
+            @media(max-width: 768px){
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+    }
+
+    .othertoolsused {
+        @extend .fullstack;
+        background: #FFF;
+        color: base.$primary-color;
+
+        .tools {
+            @extend .othertools;
+            width: 100% !important;
+        }
+    }
+}

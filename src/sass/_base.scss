@@ -1,0 +1,30 @@
+$primary-color: #282f44; // fondo
+$secondary-color: #453a49; // fondo
+$tertiary-color: #ba2c73; // botones y encabezados
+$quaternary-color: #6d3b47; // texto
+$color-home: #CC9900;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font: 400 normal 16px;
+    font-display: swap;
+    color: $quaternary-color;
+    height: 100vh;
+
+    a {
+        text-decoration: none;
+    }
+
+    @media(max-width: 990px){
+        font-size: .9rem;
+    }
+
+    @media(max-width: 540px){
+        max-width: 100%;
+        font-size: .8rem;
+    }
+}

@@ -1,0 +1,91 @@
+@use '../../sass/mixins';
+@use '../../sass/base';
+
+.loading {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#333, #555);
+
+    .content {
+        @include mixins.absolut-center;
+        position: relative;
+
+        .outercircle {
+            @include mixins.absolut-center;
+            width: 200px;
+            height: 200px;
+            background: base.$color-home;
+            border-radius: 50%;
+            box-shadow: 0 5px 25px 4px rgba(204,153,0,0.77),
+                0 15px 50px 20px rgba(204,153,0,0.77),
+                2px 80px 220px 14px rgba(204,153,0,0.4);
+            -webkit-box-shadow: 0 5px 25px 4px rgba(204,153,0,0.77),
+                0 15px 50px 20px rgba(204,153,0,0.77),
+                2px 80px 220px 14px rgba(204,153,0,0.4);
+            -moz-box-shadow: 0 5px 25px 4px rgba(204,153,0,0.77),
+                0 15px 50px 20px rgba(204,153,0,0.77),
+                2px 80px 220px 14px rgba(204,153,0,0.4);
+                -webkit-animation: 'circle-spin' 2s linear;
+                -moz-animation: 'circle-spin' 2s linear;
+                animation: 'circle-spin' 2s linear;
+                -webkit-animation-iteration-count: infinite;
+                -moz-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
+                z-index: 0;
+
+            .innercircle {
+                @include mixins.absolut-center;
+                width: 190px;
+                height: 190px;
+                background: #000;
+                border-radius: 50%;
+                z-index: 0;
+            }
+        }
+
+    }
+
+    span {
+        @include mixins.absolut-center;
+        font-size: 2rem;
+        color: base.$color-home;
+        z-index: 5;
+        -webkit-animation: pulse 2s ease-in;
+        -moz-animation: pulse 2s ease-in;
+        animation: pulse 2s ease-in;
+        -webkit-animation-iteration-count: infinite;
+        -moz-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+    }
+
+}
+@keyframes circle-spin {
+    0% {
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%,-50%) rotate(calc(360deg * 2));
+    }
+}
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale(.9) translate(-50%,-50%);
+        opacity: 0.5;
+    }
+    25% {
+        -webkit-transform: scale(1.25) translate(-40%,-40%);
+        opacity: 0.7;
+    }
+    50% {
+        -webkit-transform: scale(1.5) translate(-35%,-35%);
+        opacity: 1;
+    }
+    75% {
+        -webkit-transform: scale(1.25) translate(-40%,-40%);
+        opacity: 0.7;
+    }
+    100% {
+        -webkit-transform: scale(.9) translate(-50%,-50%);
+        opacity: 0.5;
+    }
+}

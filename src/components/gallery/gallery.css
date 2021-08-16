@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font: 400 normal 16px bona nova;
+  width: 100%;
+  height: 100%;
+  color: #6d3b47;
+  overflow-x: hidden;
+}
+body #root,
+body .App,
+body .index {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 990px) {
+  body {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 540px) {
+  body {
+    font-size: 0.8rem;
+  }
+}
+.container {
+  position: relative;
+  height: 90vh;
+}
+.container .mySlides {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+.container .mySlides .numbertext {
+  background-color: #333;
+  color: #FFF;
+  font-size: 1.5rem;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.container .mySlides img {
+  width: 80%;
+  max-height: 70vh;
+}
+@media (max-width: 990px) {
+  .container .mySlides img {
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .container .mySlides img {
+    width: 100%;
+  }
+}
+.container .prev,
+.container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  font-weight: bold;
+  font-size: 2rem;
+  border-radius: 0 3px 3px 0;
+  color: #ba2c73;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.container .prev:hover,
+.container .next:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.container .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.container .caption-container {
+  height: 5vh;
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+.container .caption-container p {
+  margin: 5px;
+}
+.container .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container .row {
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.container .row .column {
+  width: calc(100% / 8);
+  height: 100%;
+}
+.container .row .column .demo {
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+.container .row .column .demo.active, .container .row .column .demo.demo:hover {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=gallery.css.map */

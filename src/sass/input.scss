@@ -1,0 +1,60 @@
+@use 'base';
+
+.index {
+
+    .section {
+
+        #home[data-scroll="in"] ~ .container-stycky_menu .menu .icon-menu {
+            background: base.$color-home;
+        }
+        #home[data-scroll="in"] ~ .container-stycky_menu .menu .content {
+            a {
+                color: base.$color-home;
+
+                &:hover {
+                    color: rgba($color: base.$color-home, $alpha: .5);
+                }
+            }
+        }
+
+        #aboutme[data-scroll="in"] ~ .container-stycky_menu .menu .icon-menu {
+            background: base.$tertiary-color;
+        }
+        #aboutme[data-scroll="in"] ~ .container-stycky_menu .menu .content {
+            a {
+                color: base.$tertiary-color;
+
+                &:hover {
+                    color: rgba($color: base.$tertiary-color, $alpha: .5);
+                }
+            }
+        }
+
+        #portfolio[data-scroll="in"] ~ .container-stycky_menu .menu .icon-menu {
+            background: base.$primary-color;
+        }
+        #portfolio[data-scroll="in"] ~ .container-stycky_menu .menu .content {
+            a {
+                color:  base.$primary-color;
+
+                &:hover {
+                    color: rgba($color: base.$primary-color, $alpha: .5);
+                }
+            }
+        }
+
+        #contact[data-scroll="in"] ~ .container-stycky_menu .menu .icon-menu {
+            background: base.$secondary-color;
+        }
+        #contact[data-scroll="in"] ~ .container-stycky_menu .menu .content {
+            a {
+                color: base.$secondary-color;
+
+                &:hover {
+                    color: rgba($color: base.$secondary-color, $alpha: .5);
+                }
+            }
+        }
+    }
+}
+

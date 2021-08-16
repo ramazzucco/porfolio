@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 400 normal 16px;
+  font-display: swap;
+  color: #6d3b47;
+  height: 100vh;
+}
+body a {
+  text-decoration: none;
+}
+@media (max-width: 990px) {
+  body {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 540px) {
+  body {
+    max-width: 100%;
+    font-size: 0.8rem;
+  }
+}
+
+.button_go_down {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  z-index: 10;
+}
+.button_go_down button {
+  border: none;
+  position: relative;
+  background: transparent;
+  color: #6d3b47;
+  transform: rotate(-90deg);
+  font-size: 5rem;
+  cursor: pointer;
+}
+.button_go_down button span {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -47%);
+  -webkit-animation: pulse 0.7s ease-in;
+  -moz-animation: pulse 0.7s ease-in;
+  animation: pulse 0.7s ease-in;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.button_go_down button:hover {
+  color: #ba2c73;
+  filter: drop-shadow(1px 1px 5px #6d3b47);
+}
+.button_go_down button:hover span {
+  display: inline;
+  font-size: 3rem;
+}
+.button_go_down button:active {
+  transform: rotate(-90deg) scale(1.2);
+}
+@media (max-width: 768px) {
+  .button_go_down button {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 540px) {
+  .button_go_down button {
+    font-size: 3rem;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    top: 50%;
+    left: -10%;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    top: 50%;
+    left: -20%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/*# sourceMappingURL=buttons.css.map */

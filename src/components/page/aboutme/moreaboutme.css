@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 400 normal 16px;
+  font-display: swap;
+  color: #6d3b47;
+  height: 100vh;
+}
+body a {
+  text-decoration: none;
+}
+@media (max-width: 990px) {
+  body {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 540px) {
+  body {
+    max-width: 100%;
+    font-size: 0.8rem;
+  }
+}
+
+.moreaboutme {
+  width: 100%;
+  height: 100%;
+  color: #282f44;
+}
+.moreaboutme .certificate {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+.moreaboutme .certificate .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+  padding: 3rem;
+  line-height: 1.5rem;
+}
+.moreaboutme .certificate .text a {
+  color: #ba2c73;
+}
+.moreaboutme .certificate .text a:hover {
+  color: #6d3b47;
+  border-bottom: 1px solid #6d3b47;
+}
+.moreaboutme .certificate .diploma {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.moreaboutme .certificate .diploma img {
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3), 1px 1px 20px 1px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 768px) {
+  .moreaboutme .certificate .text,
+.moreaboutme .certificate .diploma {
+    width: 100%;
+  }
+  .moreaboutme .certificate .text {
+    padding: 0.5rem;
+  }
+}
+.moreaboutme .studies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  background: #CCC;
+  color: #FFF;
+}
+.moreaboutme .studies h4 {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.moreaboutme .studies .fullstack, .moreaboutme .studies .othertoolsused {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  padding: 2rem;
+}
+.moreaboutme .studies .fullstack .backend, .moreaboutme .studies .othertoolsused .backend,
+.moreaboutme .studies .fullstack .frontend,
+.moreaboutme .studies .othertoolsused .frontend,
+.moreaboutme .studies .fullstack .database,
+.moreaboutme .studies .othertoolsused .database,
+.moreaboutme .studies .fullstack .othertools,
+.moreaboutme .othertoolsused .studies .fullstack .tools,
+.moreaboutme .studies .othertoolsused .othertools,
+.moreaboutme .studies .othertoolsused .tools {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gainsboro;
+  width: 33%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.moreaboutme .studies .fullstack .backend h5, .moreaboutme .studies .othertoolsused .backend h5,
+.moreaboutme .studies .fullstack .frontend h5,
+.moreaboutme .studies .othertoolsused .frontend h5,
+.moreaboutme .studies .fullstack .database h5,
+.moreaboutme .studies .othertoolsused .database h5,
+.moreaboutme .studies .fullstack .othertools h5,
+.moreaboutme .othertoolsused .studies .fullstack .tools h5,
+.moreaboutme .studies .othertoolsused .othertools h5,
+.moreaboutme .studies .othertoolsused .tools h5 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 1.3rem;
+  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.3));
+}
+.moreaboutme .studies .fullstack .backend ul, .moreaboutme .studies .othertoolsused .backend ul,
+.moreaboutme .studies .fullstack .frontend ul,
+.moreaboutme .studies .othertoolsused .frontend ul,
+.moreaboutme .studies .fullstack .database ul,
+.moreaboutme .studies .othertoolsused .database ul,
+.moreaboutme .studies .fullstack .othertools ul,
+.moreaboutme .othertoolsused .studies .fullstack .tools ul,
+.moreaboutme .studies .othertoolsused .othertools ul,
+.moreaboutme .studies .othertoolsused .tools ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.moreaboutme .studies .fullstack .backend ul li, .moreaboutme .studies .othertoolsused .backend ul li,
+.moreaboutme .studies .fullstack .frontend ul li,
+.moreaboutme .studies .othertoolsused .frontend ul li,
+.moreaboutme .studies .fullstack .database ul li,
+.moreaboutme .studies .othertoolsused .database ul li,
+.moreaboutme .studies .fullstack .othertools ul li,
+.moreaboutme .othertoolsused .studies .fullstack .tools ul li,
+.moreaboutme .studies .othertoolsused .othertools ul li,
+.moreaboutme .studies .othertoolsused .tools ul li {
+  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.3));
+}
+@media (max-width: 990px) {
+  .moreaboutme .studies .fullstack .backend, .moreaboutme .studies .othertoolsused .backend,
+.moreaboutme .studies .fullstack .frontend,
+.moreaboutme .studies .othertoolsused .frontend,
+.moreaboutme .studies .fullstack .database,
+.moreaboutme .studies .othertoolsused .database,
+.moreaboutme .studies .fullstack .othertools,
+.moreaboutme .othertoolsused .studies .fullstack .tools,
+.moreaboutme .studies .othertoolsused .othertools,
+.moreaboutme .studies .othertoolsused .tools {
+    width: 45%;
+  }
+}
+@media (max-width: 768px) {
+  .moreaboutme .studies .fullstack .backend, .moreaboutme .studies .othertoolsused .backend,
+.moreaboutme .studies .fullstack .frontend,
+.moreaboutme .studies .othertoolsused .frontend,
+.moreaboutme .studies .fullstack .database,
+.moreaboutme .studies .othertoolsused .database,
+.moreaboutme .studies .fullstack .othertools,
+.moreaboutme .othertoolsused .studies .fullstack .tools,
+.moreaboutme .studies .othertoolsused .othertools,
+.moreaboutme .studies .othertoolsused .tools {
+    width: 100%;
+  }
+}
+.moreaboutme .studies .fullstack svg#github, .moreaboutme .studies .othertoolsused svg#github {
+  width: 64px;
+}
+.moreaboutme .studies .fullstack svg#sequelize path.cls-1, .moreaboutme .studies .othertoolsused svg#sequelize path.cls-1 {
+  fill: #2f406a;
+}
+.moreaboutme .studies .fullstack svg#sequelize path.cls-2, .moreaboutme .studies .othertoolsused svg#sequelize path.cls-2 {
+  fill: #2379bd;
+}
+.moreaboutme .studies .fullstack svg#sequelize path.cls-3, .moreaboutme .studies .othertoolsused svg#sequelize path.cls-3 {
+  fill: #03afef;
+}
+@media (max-width: 768px) {
+  .moreaboutme .studies .fullstack, .moreaboutme .studies .othertoolsused {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.moreaboutme .othertoolsused {
+  background: #FFF;
+  color: #282f44;
+}
+.moreaboutme .othertoolsused .tools {
+  width: 100% !important;
+}
+
+/*# sourceMappingURL=moreaboutme.css.map */

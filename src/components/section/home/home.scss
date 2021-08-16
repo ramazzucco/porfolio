@@ -1,0 +1,138 @@
+@use '../../../sass/base';
+@use '../../../sass/mixins';
+
+.home {
+    background-color: rgba(0, 0, 0, 0.9);
+    max-width: 100%;
+    color: base.$color-home;
+
+    .background {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(
+                150deg,
+                rgba(0, 0, 0, 0.1),
+                rgba(0, 0, 0, 0.5)
+            ),
+            url("../../../assets/images/background_home.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        filter: blur(5px);
+    }
+
+    .content {
+        @include mixins.absolut-center;
+        width: 100%;
+
+        .presentation {
+            @include mixins.flex-center;
+
+            .logo {
+                width: 100%;
+                @include mixins.flex-center;
+
+                span {
+                    font-size: 5rem;
+                    margin-bottom: 2rem;
+
+                    @media (max-width: 768px) {
+                        font-size: 4rem;
+                    }
+
+                    @media (max-width: 540px) {
+                        font-size: 3rem;
+                    }
+                }
+            }
+
+            .name {
+                width: 40%;
+                padding: 2rem 0;
+                border-top: 1px solid base.$color-home;
+                border-bottom: 1px solid base.$color-home;
+                text-align: center;
+
+                h1,h2 {
+                    transform: scale(0);
+                    transition: 0.5s;
+
+                    &[data-scroll="in"] {
+                        transform: scale(1);
+                    }
+                }
+
+                @media (max-width: 990px) {
+                    width: 60%;
+                }
+
+                @media (max-width: 768px) {
+                    width: 80%;
+                    font-size: 0.9rem;
+                }
+
+                @media (max-width: 540px) {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+
+    .circle-text-container {
+        @include mixins.absolut-center;
+        z-index: 0;
+
+        .circle-text {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: animate 9s linear infinite;
+
+            p {
+                position: absolute;
+                user-select: none;
+                pointer-events: none;
+                font-size: 2rem;
+                color: rgba($color: base.$color-home, $alpha: 0.8);
+                text-transform: uppercase;
+                opacity: 0;
+                transition: opacity 1s 1.771s ease;
+
+                &[data-scroll="out"] {
+                    opacity: 1;
+                }
+
+                @keyframes animate {
+                    0% {
+                        transform: rotate(0deg);
+                    }
+                    100% {
+                        transform: rotate(360deg);
+                    }
+                }
+
+                span {
+                    display: inline-block;
+                    position: absolute;
+                    top: -270px;
+                    transform-origin: 0 270px;
+
+                    @media(max-width: 540px){
+                        top: -180px;
+                        transform-origin: 0 180px;
+                    }
+                }
+
+                @media(max-width: 540px){
+                    font-size: 1rem;
+                }
+            }
+
+        }
+        @media only screen and (hover: none) and (pointer: coarse){
+            display: none;
+        }
+    }
+
+}

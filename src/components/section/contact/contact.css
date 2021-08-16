@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 400 normal 16px;
+  font-display: swap;
+  color: #6d3b47;
+  height: 100vh;
+}
+body a {
+  text-decoration: none;
+}
+@media (max-width: 990px) {
+  body {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 540px) {
+  body {
+    max-width: 100%;
+    font-size: 0.8rem;
+  }
+}
+
+.contact {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: linear-gradient(45deg, #6a5a70, #897491);
+  padding: 2rem;
+  box-sizing: border-box;
+  color: #453a49;
+}
+.contact h1 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+  transform-origin: left;
+  transform: scaleX(0);
+  font-size: 2.5em;
+}
+.contact h1[data-scroll=in] {
+  transform: scaleX(1);
+}
+.contact h1[data-scroll=in]::before {
+  transform: scaleX(0);
+  transition-delay: 0.5s;
+}
+.contact h1::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #44cf6c;
+  transform-origin: right;
+  transition: 0.3s ease-in-out;
+}
+.contact h1::before[data-scroll=in] {
+  transform: scaleX(0);
+  transition-delay: 0.5s;
+}
+.contact .emailme {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 3rem 0;
+}
+.contact .emailme h2 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  transition: 0.5s ease-in-out;
+  transition-delay: 0.5s;
+  transform-origin: right;
+  transform: scaleX(0);
+  font-size: 3em;
+  overflow: hidden;
+}
+.contact .emailme h2[data-scroll=in] {
+  transform: scaleX(1);
+}
+.contact .emailme h2[data-scroll=in]::before {
+  transform: scaleX(0);
+  transition-delay: 1s;
+}
+.contact .emailme h2::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #32a287;
+  transform-origin: left;
+  transition: 0.3s ease-in-out;
+}
+.contact .emailme h2::before[data-scroll=in] {
+  transform: scaleX(0);
+  transition-delay: 1s;
+}
+.contact .emailme a {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  margin: 0;
+  overflow: hidden;
+  transition: 0.3s ease;
+  transition-delay: 0.3s;
+}
+.contact .emailme:hover h2 {
+  font-size: 0;
+  transition: 0.3s ease;
+}
+.contact .emailme:hover a {
+  width: 100%;
+  height: 100%;
+  font-size: 3em;
+}
+.contact .social-media {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+.contact .social-media ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  opacity: 0;
+  transition: 1s ease;
+}
+.contact .social-media ul li {
+  position: relative;
+  list-style: none;
+  width: 60px;
+  height: 60px;
+  margin: 0 30px;
+  transform: rotate(-30deg) skew(25deg);
+}
+.contact .social-media ul li span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  color: #6a5a70;
+  font-size: 30px;
+}
+.contact .social-media ul li span svg {
+  width: 32px;
+}
+.contact .social-media ul li span svg.fa-file-pdf {
+  height: 32px;
+}
+.contact .social-media ul li:hover span:nth-child(5) {
+  transform: translate(40px, -40px);
+  opacity: 1;
+}
+.contact .social-media ul li:hover span:nth-child(4) {
+  transform: translate(30px, -30px);
+  opacity: 0.8;
+}
+.contact .social-media ul li:hover span:nth-child(3) {
+  transform: translate(20px, -20px);
+  opacity: 0.6;
+}
+.contact .social-media ul li:hover span:nth-child(2) {
+  transform: translate(10px, -10px);
+  opacity: 0.4;
+}
+.contact .social-media ul li:hover span:nth-child(1) {
+  transform: translate(0, 0);
+  opacity: 0.2;
+}
+.contact .social-media ul:nth-child(1) li span {
+  background: #0077B5;
+}
+.contact .social-media ul:nth-child(2) li span {
+  background: black;
+}
+.contact .social-media ul:nth-child(3) li span {
+  background: #4CCC5B;
+}
+.contact .social-media ul:nth-child(4) li span {
+  background: #AD0B00;
+}
+.contact .social-media ul[data-scroll=in] {
+  opacity: 1;
+}
+.contact p {
+  font-size: 0.8rem;
+  margin-top: 2rem;
+  color: #000;
+}
+@media (max-width: 540px) {
+  .contact {
+    font-size: 0.6rem;
+  }
+  .contact .social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */

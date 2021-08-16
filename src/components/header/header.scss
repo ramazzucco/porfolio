@@ -1,0 +1,184 @@
+@use '../../sass/base';
+@use '../../sass/mixins';
+
+.header {
+    width: 100%;
+    background: transparent;
+    position: absolute;
+    z-index: 15;
+    color: base.$color-home;
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        // background: rgba(0, 0, 0, 0.2);
+        transition: background .7s ease;
+        padding: .5rem;
+
+        .brand {
+            width: 13%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            span {
+                display: inline;
+                font-size: 2rem;
+                padding-left: 1rem;
+            }
+
+            .logo {
+                width: 120px;
+
+                @media(max-width:768px){
+                    width: 100px;
+                    height: 50px;
+                }
+            }
+
+            .bi-list {
+                display: none;
+                margin-left: auto;
+                padding-right: 1rem;
+                cursor: pointer;
+                color: #CC9900;
+
+                &:hover {
+                    color: rgba($color: base.$color-home, $alpha: .8);
+                }
+
+                @media(max-width: 768px){
+                    display: flex;
+                }
+
+            }
+
+            @media(max-width: 768px){
+                width: 100%;
+
+                .bi-list {
+                    width: 48px;
+                }
+            }
+        }
+
+        .nav-items {
+            width: 87%;
+            height: 7vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            transition: height .7s ease;
+
+            .nav-item {
+                margin: 0 2rem;
+                cursor: pointer;
+                position: relative;
+                transition: all .3s ease;
+
+                a {
+                    color: base.$color-home;
+
+                    span {
+                        display: none;
+                    }
+
+                    @media(min-width: 768px){
+                            &:hover {
+
+                                span {
+                                    position: absolute;
+                                    display: inline;
+                                    top: -0.05rem;
+
+                                    &:first-child {
+                                        left: -1rem;
+                                    }
+                                    &:last-child {
+                                        right: -1rem;
+                                    }
+                                }
+                            }
+
+                    }
+
+
+                    @media(max-width: 768px){
+                        padding: 0 30%;
+                    }
+
+                }
+
+                @media(max-width: 768px){
+                    width: 80%;
+                    text-align: center;
+                    margin: .3rem 0;
+
+                    &:hover {
+                        letter-spacing: .2rem;
+                        transform: scale(1.2);
+                    }
+                }
+
+                @media(max-width: 540px){
+                    width: 100%;
+                }
+
+            }
+
+            @media(max-width: 768px){
+                @include mixins.flex-column-center;
+                width: 100%;
+                height: 0;
+                overflow: hidden;
+            }
+
+            button {
+                background: transparent;
+                border-radius: 0;
+                border: 1px solid rgba($color: base.$color-home, $alpha: .7);
+                color: rgba($color: base.$color-home, $alpha: .7);
+                padding: .3rem .7rem;
+                margin-left: 2rem;
+                cursor: pointer;
+
+                span {
+                    margin-left: .5rem;
+                    color: base.$color-home;
+                    font-weight: bold;
+                }
+
+                &:hover {
+                    color: base.$color-home;
+                    border: 1px solid base.$color-home;
+                }
+
+                @media(max-width: 768px){
+                    margin-left: 0;
+                    margin-top: 1.5rem;
+                }
+            }
+        }
+
+        .nav-items.show {
+            height: 30vh;
+            padding: 2rem;
+            overflow: visible;
+
+            @media only screen and (hover: none) and (pointer: coarse){
+                height: 50vh;
+            }
+
+            @media(max-width: 540px){
+                padding: 0;
+            }
+        }
+
+        @media(max-width: 768px){
+            background: rgba(0, 0, 0, .9);
+        }
+    }
+
+}

@@ -1,0 +1,74 @@
+@use '../../sass/base';
+@use '../../sass/mixins';
+
+.button_go_down {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    z-index: 10;
+
+    button {
+        border: none;
+        position: relative;
+        background: transparent;
+        color: base.$quaternary-color;
+        transform: rotate(-90deg);
+        font-size: 5rem;
+        cursor: pointer;
+
+        span {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(-50%,-47%);
+            -webkit-animation: pulse .7s ease-in;
+            -moz-animation: pulse .7s ease-in;
+            animation: pulse .7s ease-in;
+            -webkit-animation-iteration-count: infinite;
+            -moz-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+        }
+
+        &:hover {
+            color: base.$tertiary-color;
+            filter: drop-shadow(1px 1px 5px base.$quaternary-color);
+
+            span {
+                display: inline;
+                font-size: 3rem;
+            }
+        }
+
+        &:active {
+            transform: rotate(-90deg) scale(1.2);
+        }
+
+        @media(max-width: 768px){
+            font-size: 4rem;
+        }
+
+        @media(max-width: 540px){
+            font-size: 3rem;
+        }
+    }
+}
+
+@keyframes pulse {
+    0% {
+        top: 50%;
+        left: 0;
+        transform: translate(-50%,-50%);
+    }
+    50% {
+        top: 50%;
+        left: -10%;
+        transform: translate(-50%,-50%);
+    }
+    100% {
+        top: 50%;
+        left: -20%;
+        transform: translate(-50%,-50%);
+    }
+}

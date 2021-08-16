@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 400 normal 16px;
+  font-display: swap;
+  color: #6d3b47;
+  height: 100vh;
+}
+body a {
+  text-decoration: none;
+}
+@media (max-width: 990px) {
+  body {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 540px) {
+  body {
+    max-width: 100%;
+    font-size: 0.8rem;
+  }
+}
+
+.container-stycky_menu {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  z-index: 5;
+}
+.container-stycky_menu .menu {
+  position: fixed;
+  right: 0.5rem;
+  bottom: 0.5rem;
+}
+.container-stycky_menu .menu .icon-menu {
+  border-radius: 50%;
+  z-index: 120;
+  padding: 1.5rem;
+  cursor: pointer;
+  border: none;
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.44);
+}
+.container-stycky_menu .menu .icon-menu:hover {
+  position: relative;
+  top: -1px;
+  box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, 0.44), 15px 15px 50px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+.container-stycky_menu .menu .icon-menu:active {
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.44);
+}
+.container-stycky_menu .menu .icon-menu .bi-grid-fill {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: rgba(0, 0, 0, 0.3);
+  transform: rotate(-360deg);
+  transition: all 0.3s linear;
+}
+.container-stycky_menu .menu .icon-menu .bi-grid-fill.spin {
+  -webkit-animation: spin 0.5s ease-in;
+  -moz-animation: spin 0.5s ease-in;
+  animation: spin 0.5s ease-in;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.container-stycky_menu .menu .icon-menu .bi-grid-fill.backwards {
+  -webkit-animation: spin-backwards 0.5s ease-in;
+  -moz-animation: spin-backwards 0.5s ease-in;
+  animation: spin-backwards 0.5s ease-in;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.container-stycky_menu .menu .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  height: 0;
+  transform: translate(-50%, -100%);
+  padding-bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50px 50px 0 0;
+  z-index: -5;
+  overflow: hidden;
+  transition: all 0.7s ease;
+}
+.container-stycky_menu .menu .content .bi {
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.container-stycky_menu .menu .content .bi.bi-house-door-fill {
+  margin-bottom: 2rem;
+}
+.container-stycky_menu .menu .content.show {
+  height: 17rem;
+  padding: 1rem;
+}
+
+@keyframes spin {
+  0% {
+    transform: scale(0.8) rotate(0deg);
+  }
+  25% {
+    transform: scale(1) rotate(90deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(180deg);
+  }
+  75% {
+    transform: scale(1.2) rotate(270deg);
+  }
+  100% {
+    transform: scale(1.3) rotate(360deg);
+  }
+}
+@keyframes spin-backwards {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.1) rotate(-90deg);
+  }
+  50% {
+    transform: scale(1.2) rotate(-180deg);
+  }
+  75% {
+    transform: scale(1.1) rotate(-270deg);
+  }
+  100% {
+    transform: scale(1) rotate(-360deg);
+  }
+}
+
+/*# sourceMappingURL=sticky_menu.css.map */

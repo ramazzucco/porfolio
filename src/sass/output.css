@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 400 normal 16px;
+  font-display: swap;
+  color: #6d3b47;
+  height: 100vh;
+}
+body a {
+  text-decoration: none;
+}
+@media (max-width: 990px) {
+  body {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 540px) {
+  body {
+    max-width: 100%;
+    font-size: 0.8rem;
+  }
+}
+
+.index .section #home[data-scroll=in] ~ .container-stycky_menu .menu .icon-menu {
+  background: #CC9900;
+}
+.index .section #home[data-scroll=in] ~ .container-stycky_menu .menu .content a {
+  color: #CC9900;
+}
+.index .section #home[data-scroll=in] ~ .container-stycky_menu .menu .content a:hover {
+  color: rgba(204, 153, 0, 0.5);
+}
+.index .section #aboutme[data-scroll=in] ~ .container-stycky_menu .menu .icon-menu {
+  background: #ba2c73;
+}
+.index .section #aboutme[data-scroll=in] ~ .container-stycky_menu .menu .content a {
+  color: #ba2c73;
+}
+.index .section #aboutme[data-scroll=in] ~ .container-stycky_menu .menu .content a:hover {
+  color: rgba(186, 44, 115, 0.5);
+}
+.index .section #portfolio[data-scroll=in] ~ .container-stycky_menu .menu .icon-menu {
+  background: #282f44;
+}
+.index .section #portfolio[data-scroll=in] ~ .container-stycky_menu .menu .content a {
+  color: #282f44;
+}
+.index .section #portfolio[data-scroll=in] ~ .container-stycky_menu .menu .content a:hover {
+  color: rgba(40, 47, 68, 0.5);
+}
+.index .section #contact[data-scroll=in] ~ .container-stycky_menu .menu .icon-menu {
+  background: #453a49;
+}
+.index .section #contact[data-scroll=in] ~ .container-stycky_menu .menu .content a {
+  color: #453a49;
+}
+.index .section #contact[data-scroll=in] ~ .container-stycky_menu .menu .content a:hover {
+  color: rgba(69, 58, 73, 0.5);
+}
+
+/*# sourceMappingURL=output.css.map */
