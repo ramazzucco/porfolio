@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/RSM-developer/static/css/main.4a91a72e.chunk.css",
+    "main.js": "/RSM-developer/static/js/main.da23e7d7.chunk.js",
+    "main.js.map": "/RSM-developer/static/js/main.da23e7d7.chunk.js.map",
+    "runtime-main.js": "/RSM-developer/static/js/runtime-main.8f282709.js",
+    "runtime-main.js.map": "/RSM-developer/static/js/runtime-main.8f282709.js.map",
+    "static/js/2.7dd37576.chunk.js": "/RSM-developer/static/js/2.7dd37576.chunk.js",
+    "static/js/2.7dd37576.chunk.js.map": "/RSM-developer/static/js/2.7dd37576.chunk.js.map",
+    "index.html": "/RSM-developer/index.html",
+    "static/css/main.4a91a72e.chunk.css.map": "/RSM-developer/static/css/main.4a91a72e.chunk.css.map",
+    "static/js/2.7dd37576.chunk.js.LICENSE.txt": "/RSM-developer/static/js/2.7dd37576.chunk.js.LICENSE.txt",
+    "static/media/DIPLOMA-FullstackWeb.69cc3b26.pdf": "/RSM-developer/static/media/DIPLOMA-FullstackWeb.69cc3b26.pdf",
+    "static/media/Diploma.80330fa7.png": "/RSM-developer/static/media/Diploma.80330fa7.png",
+    "static/media/Ramiro_Mazzucco.dde5121f.pdf": "/RSM-developer/static/media/Ramiro_Mazzucco.dde5121f.pdf",
+    "static/media/home.css": "/RSM-developer/static/media/background_home.3df93f1a.jpg",
+    "static/media/bannermeatme.28ed2380.png": "/RSM-developer/static/media/bannermeatme.28ed2380.png",
+    "static/media/fondo_maradona.1de4a81b.png": "/RSM-developer/static/media/fondo_maradona.1de4a81b.png",
+    "static/media/fondocancha.1ab30b94.jpg": "/RSM-developer/static/media/fondocancha.1ab30b94.jpg",
+    "static/media/futbol5_logo.709781d9.jpg": "/RSM-developer/static/media/futbol5_logo.709781d9.jpg",
+    "static/media/new_reserve_event.f9759148.png": "/RSM-developer/static/media/new_reserve_event.f9759148.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8f282709.js",
+    "static/js/2.7dd37576.chunk.js",
+    "static/css/main.4a91a72e.chunk.css",
+    "static/js/main.da23e7d7.chunk.js"
+  ]
+}
