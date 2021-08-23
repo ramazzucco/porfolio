@@ -687,10 +687,11 @@ const english = {
                     <br key={5} />,
                     'It has also created an API that allows to handle the CRUD of products and users.'
                 ],
-                link: {
-                    title: 'See code',
+                link:  {
+                    title: 'Ver codigo',
                     url: 'https://github.com/ramazzucco/Meat-me',
-                    icon: icons.github
+                    icon: icons.github,
+                    page: 'https://meat--me.herokuapp.com/'
                 },
                 gallery: [
                     {
